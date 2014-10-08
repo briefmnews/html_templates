@@ -1,0 +1,96 @@
+a {
+    text-decoration: none;
+    /* font-weight: bold;*/
+}
+
+.category__title {
+    font-family: 'Patron Bold', 'Helvetica', 'Arial', sans-serif; 
+    font-size: 25px; 
+    font-weight: bold; 
+    white-space: nowrap; 
+    line-height: 20px; 
+    letter-spacing: -1px; 
+    color: #000000;
+}
+
+.news .title {
+    font-family: 'Patron Bold', 'Helvetica', 'Arial', sans-serif;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #DE4949;
+}
+.para {
+    font-family: 'Patron Regular', 'Helvetica', 'Arial', sans-serif; 
+    font-size: 15px; 
+    font-weight: lighter; 
+    line-height: 22px; 
+    color: #000000;
+}
+
+.para--list {
+    font-family: 'Patron Regular', 'Helvetica', 'Arial', sans-serif; 
+    font-size: 15px; 
+    font-weight: lighter; 
+    line-height: 22px; 
+    color: #333333;
+}
+
+
+.intro .para {
+    font-size: 17px; 
+    font-weight: lighter; 
+    color: #666666;
+}
+.intro a{
+    color: #DE4949;
+}
+
+
+
+.outro .para {
+    font-size: 18px; 
+    color: #666666;
+}
+.outro a{
+    color: #DE4949;
+}
+
+
+
+.actu .para {
+    color: #333333;
+}
+.actu a,
+.actu .dot,
+.actu .para--quote {
+    color: #DE4949;
+    /* color: #D81C00;*/
+}
+.actu .quote__border {
+    background-color: #DE4949;
+    /* background-color: #D81C00;*/
+}
+
+.explicateur a,
+.explicateur .dot,
+.explicateur .para--quote {
+    color: #44B19C;
+    /* color: #0062A6;*/
+}
+.explicateur .quote__border {
+    background-color: #44B19C;
+    /* background-color: #0062A6;*/
+}
+
+.decouverte a,
+.decouverte .dot,
+.decouverte .para--quote {
+    color: #E17A3E;
+    /* color: #A8006F;*/
+}
+.decouverte .quote__border {
+    background-color: #E17A3E;
+    /* background-color: #A8006F;*/
+}
+
