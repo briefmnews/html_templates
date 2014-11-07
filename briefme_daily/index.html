@@ -33,7 +33,6 @@ b {
 .para {
 	font-family: 'Patron Regular', 'Helvetica', 'Arial', sans-serif;
 	font-size: 18px;
-	font-weight: lighter;
 	line-height: 26px;
 	color: #4D4D4D;
 }
@@ -54,7 +53,6 @@ b {
 }
 .intro .para {
 	font-size: 19px;
-	font-weight: lighter;
 	line-height:27px;
 	color: #4D4D4D;
 }
@@ -64,7 +62,6 @@ b {
 }
 .outro .para {
 	font-size: 19px;
-	font-weight: lighter;
 	line-height:27px;
 	color: #4D4D4D;
 }
@@ -75,6 +72,16 @@ b {
 .fixheight {
 	font-size:0px;
 	line-height:0px;
+}
+.logo {
+  min-width: 240px; 
+  max-width: 100%; 
+  height: auto;
+}
+.date {
+  font-family: 'Patron Regular', 'Helvetica', 'Arial', sans-serif; 
+  font-size: 19px; 
+  color: #666666;
 }
 /* 
   Categories colors 
@@ -116,6 +123,16 @@ b {
 </style>
 <style type="text/css" media="screen">
 @media all and (max-width: 320px) {
+.logo {
+  min-width: 145px !important; 
+  max-width: 145px !important;
+}
+.date {
+  font-size: 14px !important;
+}
+.logo_border {
+  height: 48px !important;
+}
 .news .para {
 	font-size: 16px !important;
 	line-height: 22px !important;
@@ -152,18 +169,18 @@ b {
                       <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
                           <tbody>
                             <tr>
-                              <td><a href="http://www.brief.me"><img src="http://s.brief.me/dailybriefme/img/brief-me-title.gif" alt="brief.me" width="240" height="70" border="0" style="min-width: 240px; max-width: 100%; height: auto;"/></a></td>
+                              <td><a href="http://www.brief.me"><img src="img/brief-me-title.png" alt="brief.me" width="240" height="70" border="0" class="logo" /></a></td>
                             </tr>
                             <tr>
-                              <td style="font-family: 'Patron Regular', 'Helvetica', 'Arial', sans-serif; font-size: 19px; font-weight: lighter; color: #666666;">2 octobre 2014</td>
+                              <td class="date">2 octobre 2014</td>
                             </tr>
                           </tbody>
                         </table></td>
                       <td width="100%" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="100%">
                           <tbody>
                             <tr>
-                              <td width="1" height="81" style="font-size: 0px; background-color: #797979;"></td>
-                              <td height="81">&nbsp;</td>
+                              <td width="1" height="81" class="logo_border" style="font-size: 0px; background-color: #bfbfbf;"></td>
+                              <td height="81" class="logo_border">&nbsp;</td>
                             </tr>
                           </tbody>
                         </table></td>
