@@ -1,0 +1,16 @@
+{% extends "transactional_with_cta.tmpl" %}
+{% block intro %}
+<p class="big">Bonjour,</p>
+<p class="big">Vous avez demandé la réinitialisation de votre mot de passe.</p>
+<p class="big red">Vous pouvez mettre à jour votre mot de passe en cliquant sur le bouton ci-dessous.</p>
+{% endblock %}
+
+
+{% block cta %}
+<a href="{{ '{{' }}event.password_recover_url{{ '}}' }}"><span>Mettre à jour mon mot de passe</span></a>
+{% endblock %}
+
+{% block outro %}
+<p>Si ce message vous est adressé par erreur, vous pouvez l'ignorer</p>
+<p>L'équipe de <strong>Brief.me</strong></p>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "transactional_with_cta.tmpl" %}
+{% block intro %}
+<p class="big">Bonjour,</p>
+<p class="big">Vous avez souscrit un abonnement d'essai d'une période de deux semaines.</p>
+<p class="big red">Merci de confirmer votre inscription en cliquant sur le bouton ci-dessous.</p>
+{% endblock %}
+
+
+{% block cta %}
+<a href="{{ '{{' }}event.confirmation_url{{ '}}' }}"><span>Je confirme mon inscription à Brief.me</span></a>
+{% endblock %}
+
+{% block outro %}
+<p>Vous ne recevrez Brief.me que si vous cliquez sur le bouton ci-dessus. Si
+ce message vous est adressé par erreur, vous pouvez l'ignorer</p>
+<p>Nous sommes très heureux de nous compter parmi nos lecteurs</p>
+<p>A très vite</p>
+<p>L'équipe de <strong>Brief.me</strong></p>
+{% endblock %}

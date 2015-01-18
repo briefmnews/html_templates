@@ -87,6 +87,7 @@ p.red {
                                 <tbody>
                                 <tr>
                                     <td width="100%" class="vero-editable">
+                                        {% block intro %}
                                         <p class="big">
                                         Bonjour,
                                         </p>
@@ -96,6 +97,7 @@ p.red {
                                         <p class="big red">
                                         Merci de confirmer votre inscription en cliquant sur le bouton ci-dessous.
                                         </p>
+                                        {% endblock %}
                                     </td>
                                 </tr>
                                 <tr>
@@ -113,7 +115,9 @@ p.red {
                                             <tr>
                                                 <td width="10" height="10" style="font-size:0px; line-height:0px !important; background-color: #de4949">&nbsp;</td>
                                                 <td class="cta vero-editable" style="background-color: #de4949">
+                                                    {% block cta %}
                                                     <a href=""><span>Je confirme mon inscription à Brief.me</span></a>
+                                                    {% endblock %}
                                                 </td>
                                                 <td width="10" style="background-color: #de4949">&nbsp;</td>
                                             </tr>
@@ -129,12 +133,14 @@ p.red {
                                 </tr>
                                 <tr>
                                     <td width="100%" class="vero-editable">
+                                        {% block outro %}
 
                                         <p>Vous ne recevrez Brief.me que si vous cliquez sur le bouton ci-dessus. Si
                                         ce message vous est adressé par erreur, vous pouvez l'ignorer</p>
                                         <p>Nous sommes très heureux de nous compter parmi nos lecteurs</p>
                                         <p>A très vite</p>
                                         <p>L'équipe de <strong>Brief.me</strong></p>
+                                        {% endblock %}
 
                                     </td>
                                 </tr>
