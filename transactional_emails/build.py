@@ -29,10 +29,10 @@ def gen_premailer(htmls):
 
 def write_output(emails, output):
     for email in emails:
-        print email
+        f = open(output + '/' + email[0], 'w')
+        f.write(email[1].encode("utf-8"))
 
 files = gen_find("*.html", "templates")
 htmls = gen_jinja(files)
 emails = gen_premailer(htmls)
 write_output(emails, "output")
-
