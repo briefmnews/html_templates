@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- body-->
+        <tr>
+            <td width="33" style="background-color: #ffffff; min-width:33px">&nbsp;</td>
+            <td width="100%" style="min-width:290px;">
+                <table width="100%"border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td style="background-color: #ffffff;">
+                            <table width="100%" border=0 cellpadding=0 cellspacing="0" style="max-width:800px; margin: 0 auto;">
+                                <tbody>
+                                <tr>
+                                    <td width="100%" class="vero-editable">
+                                        {% block intro %}
+                                        <p class="big">Bonjour,</p>
+                                        <p class="big">Vous avez demandé la réinitialisation de votre mot de passe.</p>
+                                        <p class="big red">Vous pouvez mettre à jour votre mot de passe en cliquant sur le bouton ci-dessous.</p>
+                                        {% endblock %}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="33" style="background-color: #ffffff; min-width:33px">&nbsp;</td>
+        </tr>
+
+        {% block middle %}
+        {% endblock %}
+        
+        <tr>
+            <td width="33" style="background-color: #ffffff; min-width:33px">&nbsp;</td>
+            <td width="100%" style="min-width:290px;">
+                <table width="100%"border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td style="background-color: #ffffff;">
+                            <table width="100%" border=0 cellpadding=0 cellspacing="0" style="max-width:800px; margin: 0 auto;">
+                                <tbody>
+                                <tr>
+                                    <td width="100%" class="vero-editable">
+                                        {% block outro %}
+                                        <p>Si ce message vous est adressé par erreur, vous pouvez l'ignorer</p>
+                                        <p>L'équipe de <strong>Brief.me</strong></p>
+                                        {% endblock %}
+
+                                    </td>
+                                </tr>
+
+                                </tbody>
+
+                            </table>
+                        </td>
+
+                    </tr>
+
+                    </tbody>
+                </table>
+            </td>
+            <td width="33" style="background-color: #ffffff; min-width:33px">&nbsp;</td>
+        </tr>
+    <!-- /body-->
+    <tr>
+        <td height="50"></td>
+    </tr>
+{% endblock %}

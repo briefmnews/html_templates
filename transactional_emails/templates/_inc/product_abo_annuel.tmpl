@@ -1,0 +1,11 @@
+{% extends "_inc/product.tmpl" %}
+
+{% block prod_description %}
+<p class="big"><span class="red"><span class="price">3,90 €</span> / mois</span> avec un <strong>abonnement annuel</strong></p>
+<p>En souscrivant un abonnement pour une année complète, je suis prélevé chaque année de 46,80 € au lieu de 64,90 € soit une réduction de près de 30 %.</p>
+
+{% endblock %}
+
+{% block cta %}
+<a href="{{ '{{' }}event.password_recover_url{{ '}}' }}"><span>Je souscris un abonnement annuel</span></a>
+{% endblock %}

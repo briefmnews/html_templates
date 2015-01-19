@@ -1,0 +1,14 @@
+{% extends "transactional.html" %}
+{% block middle %}
+
+{% include "_inc/product_abo_annuel.tmpl" %}
+
+<tr>
+    <td bgcolor="#ffffff" width="33" style="min-width:33px">&nbsp;</td>
+    <td width="100%" style="min-width:290px;">&nbsp;</td>
+    <td bgcolor="#ffffff" width="33" style="min-width:33px">&nbsp;</td>
+</tr>
+
+{% include "_inc/product_abo_mensuel.tmpl" %}
+
+{% endblock %}
