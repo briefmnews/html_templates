@@ -7,7 +7,10 @@ from premailer import transform
 from jinja2 import Environment, PackageLoader
 
 
-env = Environment(loader=PackageLoader('transactional_emails', 'templates'))
+env = Environment(
+    loader=PackageLoader('transactional_emails', 'templates'),
+    extensions=['jinja2.ext.with_']
+)
 
 
 def gen_find(filepat, top):

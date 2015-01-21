@@ -1,14 +1,60 @@
 {% extends "transactional.html" %}
+
+{% block intro %}
+<p>Bonjour,</p>
+<p>Nous sommes heureux de votre appartenance à la communauté de Brief.me. Et nous espérons que vous partagez ce sentiment !</p>
+<p>
+Brief.me, c'est chaque soir, en un seul e-mail, l'assurance de ne rien rater d'important dans l'actualité de la journée, l'explication détaillée d'un événement important, la découverte de sujets originaux, un conseil pratique directement utile.
+</p>
+<p class="big">Votre période d'essai va s'achever demain.</p>
+<p class="big red">Nous vous proposons deux options pour poursuivre votre abonnement&#160;:</p>
+{% endblock %}
+
 {% block middle %}
 
 {% include "_inc/product_abo_annuel.tmpl" %}
 
-<tr>
-    <td bgcolor="#ffffff" width="33" style="min-width:33px">&nbsp;</td>
-    <td width="100%" style="min-width:290px;">&nbsp;</td>
-    <td bgcolor="#ffffff" width="33" style="min-width:33px">&nbsp;</td>
-</tr>
-
 {% include "_inc/product_abo_mensuel.tmpl" %}
 
+<tr>
+    <td width="33" style="background-color: #ffffff; min-width:33px">&nbsp;</td>
+    <td width="100%" style="min-width:290px;">
+        <table width="100%"border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+                <td style="background-color: #ffffff;">
+                    <table width="100%" border=0 cellpadding=0 cellspacing="0" style="max-width:800px; margin: 0 auto;">
+                        <tbody>
+                        <tr>
+                            <td width="100%" class="vero-editable">
+                                <p class="red">Dans les deux cas :<br />
+                                Je peux interrompre mon abonnement en un seul clic à tout moment depuis ma page de membre.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+    <td width="33" style="background-color: #ffffff; min-width:33px">&nbsp;</td>
+</tr>
+{% with color="#ffffff",height=10 %}
+{% include "_inc/spacer.tmpl" %}
+{% endwith %}
+
+{% with color="#efefec",height=10 %}
+{% include "_inc/spacer.tmpl" %}
+{% endwith %}
+
 {% endblock %}
+
+{% block  outro %}
+<p class="big"> À ce stade, vous vous posez peut-être cette question : pourquoi me demande-t-on maintenant de payer ?  </p>
+<p> Nous avons choisi de ne pas opter pour un modèle publicitaire. Notre but est de vous offrir une approche "zen" de l'information, une expérience de lecture calme et reposante. La publicité, surtout sur les mobiles, représente une intrusion qui va à l'encontre de cet objectif, quand elle n'est pas mélangée dans la confusion au contenu rédactionnel.</p>
+<p>Brief.me mobilise une équipe de journalistes, permanents et pigistes, pour vous proposer une information rigoureuse, synthétique et originale. Nous souhaitons nous développer en proposant un produit que nos lecteurs sont heureux de payer pour ses qualités et ce qu'il leur apporte, comme lorsque vous achetez du pain chez votre boulanger.</p>
+<p>Merci pour votre confiance</p>
+<p>L'équipe de Brief.me</p>
+
+{% endblock %}
+
